@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung chuyen doi tien te</title>
+    <script src="Exchange.js"></script>
+    <style>
+        button {
+            background-color: cyan;
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+<table width="50%" align="center">
+    <tr>
+        <th align="center"><b>Amount</b></th>
+        <th align="center"><b>From Currency</b></th>
+        <th align="center"><b>To Currency</b></th>
+    </tr>
+    <tr>
+        <td align="center"><input type="text" name="amount" placeholder="1" id="amount"></td>
+        <td align="center"><select name="currencyFrom" id="currencyFrom">
+            <option value="vietnamdong">VND</option>
+            <option value="dollar">USD</option>
+            <option value="canadadollar">CAN</option>
+            <option value="yen">&#165;</option>
+            </select>
+        </td>
+        <td align="center"><select name="currencyTo" id="currencyTo">
+            <option value = "dollar">USD</option>
+            <option value = "vietnamdong">VND</option>
+            <option value="canadadollar">CAN</option>
+            <option value = "yen">&#165;</option>
+        </select>
+        </td>
+        <td><button type="button" class="style" onclick="exchange()" >Convert</button></td>
+    </tr>
+</table>
+<br>
+<p align="center" id="convert" style="color: darkorchid">placeholder</p>
+</body>
+</html>
